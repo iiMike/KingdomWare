@@ -82,7 +82,7 @@ class VersionCommand extends VanillaCommand{
 
 	private function describeToSender(Plugin $plugin, CommandSender $sender){
 		$desc = $plugin->getDescription();
-		$sender->sendMessage(TextFormat::DARK_GREEN . $desc->getName() . TextFormat::WHITE . " version " . TextFormat::DARK_GREEN . $desc->getVersion());
+		$sender->sendMessage(TextFormat::DARK_GREEN . $desc->getName() . TextFormat::WHITE . " KingdomWare Usage Release, Private [v1.0.1] " . TextFormat::DARK_GREEN . $desc->getVersion());
 
 		if($desc->getDescription() != null){
 			$sender->sendMessage($desc->getDescription());
